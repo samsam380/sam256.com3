@@ -376,12 +376,12 @@
         </span><span class="caret">▍</span>
       </div>
 
-      <!--
+    
       <div class="hint">
         press <kbd>?</kbd> for transmission • press <kbd>S</kbd> to silence
       </div>
     </div>
-    -->
+    
     <div class="links" aria-label="links">
       <a data-hint="entropy from dice that generates 24 seed phrase" href="https://samsam380.github.io/dicebtc/" target="_blank" rel="noopener">Dice Roll</a>
       <a data-hint="making multiple wallets from 24 seed phrase" href="https://samsam380.github.io/mnemonic/" target="_blank" rel="noopener">Mnemonic</a>
@@ -461,10 +461,10 @@
     overlay.addEventListener('click', (e) => { if(e.target === overlay) closeOverlay(); });
 
     // Keyboard easter eggs
-    //   document.addEventListener('keydown', (e) => {
-    //     if (e.key === '?' || (e.shiftKey && e.key === '/')) openOverlay();
-    //     if (e.key === 'Escape') closeOverlay();
-    //   if (e.key.toLowerCase() === 's') document.body.classList.toggle('silence');
+    document.addEventListener('keydown', (e) => {
+     if (e.key === '?' || (e.shiftKey && e.key === '/')) openOverlay();
+     if (e.key === 'Escape') closeOverlay();
+     if (e.key.toLowerCase() === 's') document.body.classList.toggle('silence');
     });
   </script>
 </body>
