@@ -371,12 +371,12 @@
           combined with everything you don't know about computer.”
         </span><span class="caret">▍</span>
       </div>
-
+<!--
       <div class="hint">
         press <kbd>?</kbd> for transmission • press <kbd>S</kbd> to silence
       </div>
     </div>
-
+-->
     <div class="links" aria-label="links">
       <a data-hint="entropy from dice that generates 24 seed phrase" href="https://samsam380.github.io/dicebtc/" target="_blank" rel="noopener">Dice Roll</a>
       <a data-hint="making multiple wallets from 24 seed phrase" href="https://samsam380.github.io/mnemonic/" target="_blank" rel="noopener">Mnemonic</a>
@@ -389,7 +389,7 @@
     </div>
   </div>
 
-  <!-- Transmission overlay -->
+  <!-- Transmission overlay 
   <div class="overlay" id="overlay" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="transmission">
       <h2>Transmission</h2>
@@ -408,39 +408,8 @@
       </div>
     </div>
   </div>
-
+-->
   <script>
-    // Tiny, cheap interactivity. No heavy work. COMMENTED OUT
-    // const clockEl = document.getElementById('clock');
-    // const sigEl = document.getElementById('signal');
-    // const sigline = document.getElementById('sigline');
-    // const quote = document.getElementById('quote');
-
-    // const overlay = document.getElementById('overlay');
-    // const closeBtn = document.getElementById('closeBtn');
-
-    // function pad(n){ return String(n).padStart(2,'0'); }
-
-    // Clock
-    // function tickClock(){
-     //  const d = new Date();
-    //   clockEl.textContent = `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
-   //  }
-   //  tickClock();
-  //   setInterval(tickClock, 1000);
-
-    // Fake signal strength (smooth-ish) COMMENTED OUT
-     // let t = 0;
-     // function tickSignal(){
-     //   t += 0.03;
-      //  const base = 62 + Math.sin(t) * 18 + Math.sin(t * 0.37) * 9;
-      //  const jitter = (Math.random() - 0.5) * 2.2;
-      //  const s = Math.max(7, Math.min(99, base + jitter));
-      //  sigEl.textContent = `signal: ${Math.round(s)}%`;
-      //  sigline.textContent = s > 70 ? "receiving" : (s > 45 ? "listening" : "searching");
-     // }
-     // tickSignal();
-    //  setInterval(tickSignal, 500);
 
     // Block number or header element
     
